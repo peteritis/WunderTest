@@ -1,0 +1,4 @@
+name: webtest
+recipe: drupal8
+config:
+  webroot: web
