@@ -1,0 +1,6 @@
+parts_helper:
+  version: 1.x
+  css:
+    theme:
+      css/parts_helper-layout.css: {}
+

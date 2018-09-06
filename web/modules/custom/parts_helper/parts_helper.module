@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains parts_helper.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function parts_helper_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the parts_helper module.
+    case 'help.page.parts_helper':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Storage') . '</p>';
+      return $output;
+
+    default:
+  }
+}

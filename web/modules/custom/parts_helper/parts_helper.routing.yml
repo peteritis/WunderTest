@@ -1,0 +1,25 @@
+#
+#Parts_Helper.content:
+#  path: '/shop'
+#  defaults:
+#    _controller: '\Drupal\shop\Controller\ShopController::content'
+#    _title: 'Shop'
+#  requirements:
+#    _permission: 'access content'
+
+parts_helper.shop_controller_hello:
+  path: 'shop'
+  defaults:
+    _controller: '\Drupal\parts_helper\Controller\ShopController::content'
+    _title: 'content'
+  requirements:
+    _permission: 'access content'
+
+
+parts_helper.parts_form:
+  path: '/find_us'
+  defaults:
+    _form: '\Drupal\parts_helper\Form\PartsForm'
+    _title: 'content'
+  requirements:
+    _permission: 'access content'
