@@ -11,13 +11,13 @@
 
             // src = "https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
 
-            var map = L.map('map').setView([56.97598, 24.11431], 17);
+            var map = L.map('map').setView([56.97700, 24.11801], 16);
 
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             }).addTo(map);
 
-            L.marker([56.97598, 24.11431]).addTo(map)
+            L.marker([56.97700, 24.11801]).addTo(map)
                 .bindPopup('Mēs esam šeit.')
                 .openPopup();
 

@@ -6,18 +6,22 @@ use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Messenger\MessengerInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
+use Drupal\parts_helper\PartsService;
 
 class PartsForm extends FormBase {
 
     protected $messenger;
+    protected $PartsService;
 
-    public function __construct(MessengerInterface $messenger){
+    public function __construct(MessengerInterface $messenger, PartsService $sender){
         $this->messenger = $messenger;
+        $this->PartsService = $sender;
     }
 
     public static function create(ContainerInterface $container){
         return new static (
-            $container->get('messenger')
+            $container->get('messenger'),
+            $container->get('parts_helper.service')
         );
     }
 
@@ -82,8 +86,12 @@ class PartsForm extends FormBase {
 
     public function submitForm(array &$form, FormStateInterface $form_state)
     {
+        $usr_name = $form_state->getValue('name');
+        $usr_surname = $form_state->getValue('surname');
+        $usr_email = $form_state->getValue('email');
         // drupal_set_message("Thank you for your submission.");
         $this->messenger->addMessage('Thank you!');
+        $this->messenger->addMessage($this->PartsService->PartsFormSubmitMessage($usr_name, $usr_surname, $usr_email));
     }
 
 }

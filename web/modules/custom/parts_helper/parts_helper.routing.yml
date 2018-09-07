@@ -16,10 +16,10 @@ parts_helper.shop_controller_hello:
     _permission: 'access content'
 
 
-parts_helper.parts_form:
-  path: '/find_us'
-  defaults:
-    _form: '\Drupal\parts_helper\Form\PartsForm'
-    _title: 'content'
-  requirements:
-    _permission: 'access content'
+#parts_helper.parts_form:
+#  path: '/find_us'
+#  defaults:
+#    _form: '\Drupal\parts_helper\Form\PartsForm'
+#    _title: 'content'
+#  requirements:
+#    _permission: 'access content'

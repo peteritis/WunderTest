@@ -10,3 +10,6 @@ parts_map:
 #    js/vendor/gmaps.js: {}
     js/script.js: {}
     js/leaflet.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

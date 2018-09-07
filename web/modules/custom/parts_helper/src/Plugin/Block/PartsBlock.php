@@ -25,10 +25,6 @@ class PartsBlock extends BlockBase {
     $build['#attached']['library'][] = 'parts_helper/parts_map';
     $build['#attached']['drupalSettings']['parts_helper']['PartsBlock']['coordinates'] = 'location';
 
-    // $config = $this->getConfiguration();
-
-    // $coordinates = isset($config['coordinates']) ? $config['coordinates'] : '';
-
     return $build;
   }
 
@@ -40,7 +36,7 @@ class PartsBlock extends BlockBase {
       $form['coordinates'] = [
           '#type' => 'textfield',
           '#title' => 'Location',
-          '#default_value' => '56.97598, 24.11431',
+          '#default_value' => '56.97700, 24.11801',
           '#required' => 'TRUE',
       ];
       return $form;
