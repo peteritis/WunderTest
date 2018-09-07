@@ -1,0 +1,10 @@
+name: BMWParadise
+type: theme
+description: 'BMWParadise online shop'
+package: BMWParadise
+core: 8.x
+libraries:
+  - bmwparadise/global-styling
+ 
+base theme: false
+

@@ -2,3 +2,14 @@ name: 'Parts_Helper'
 type: module
 description: 'Storage'
 core: 8.x
+
+name: BMWP
+type: theme
+description: 'BMWParadise theme for car parts online store'
+core: 8.x
+base theme: classy
+regions:
+  header: Header
+  content: Content
+  sidebar_first: 'Sidebar first'
+  footer: Footer
