@@ -1,7 +1,4 @@
-body {
-    -- background-color: red !important;
-}
-
-.block-views-blockgulbene-block-1 {
-    -- width: 32%;
+#map {
+    height: 380px;
+    width: 380px;
 }

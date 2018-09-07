@@ -1,6 +1,12 @@
-parts_helper:
+parts_map:
   version: 1.x
   css:
-    theme:
+    layout:
+      css/leaflet.css: {}
       css/parts_helper-layout.css: {}
-
+  js:
+#    https://maps.google.com/maps/api/js?key=(PASTE-YOUR-GOOGLE-MAP-APY-KEY-HERE):
+#      type: external
+#    js/vendor/gmaps.js: {}
+    js/script.js: {}
+    js/leaflet.js: {}

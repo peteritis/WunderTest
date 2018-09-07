@@ -1,0 +1,4 @@
+services:
+  parts_helper.service:
+    class: Drupal\parts_helper\PartsService
+    arguments: []
