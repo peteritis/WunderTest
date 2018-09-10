@@ -4,7 +4,6 @@ description: 'BMWParadise online shop'
 package: BMWParadise
 core: 8.x
 libraries:
-  - bmwparadise/global-styling
- 
-base theme: false
+  - bmwparadise/global
+base theme: classy
 
