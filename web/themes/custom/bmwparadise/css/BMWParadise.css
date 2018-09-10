@@ -1,3 +1,76 @@
 body {
+    background-color: white;
+}
+
+header {
+    height: 75px;
+}
+
+.region-header {
+    height: 75px;
+}
+
+#block-bmwparadise-branding {
+    height: 75px;
+    text-align: right;
+    margin-right: 3%;
+}
+
+.region-primary-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-left: 3%;
+}
+
+.region-primary-menu li {
+    float: left;
+}
+
+.region-primary-menu li a {
+    background-color: slategray;
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.region-primary-menu li a:hover {
+    background-color: #111111;
+}
+
+.region-secondary-menu {
+    float: right;
+    margin-right: 3%;
+}
+
+.layout-content {
+    margin-left: 4%;
+}
+
+#block-bmwparadise-views-block-gulbene-block-1 {
+    width: 100%;
+}
+
+#block-bmwparadise-views-block-riga-block-1 {
+    width: 100%;
+}
+
+#block-bmwparadise-views-block-valmiera-block-1 {
+    width: 100%;
     background-color: red;
+}
+
+.region-content div {
+    width: 32%;
+    float: left;
+}
+
+.region-content {
+    clear: both;
+}
+
+.layout-sidebar-first {
+    clear: both;
 }
