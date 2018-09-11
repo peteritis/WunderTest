@@ -1,5 +1,6 @@
 body {
     background-color: white;
+    min-width: 320px;
 }
 
 header {
@@ -49,21 +50,8 @@ header {
     margin-left: 4%;
 }
 
-#block-bmwparadise-views-block-gulbene-block-1 {
-    width: 100%;
-}
-
-#block-bmwparadise-views-block-riga-block-1 {
-    width: 100%;
-}
-
-#block-bmwparadise-views-block-valmiera-block-1 {
-    width: 100%;
-    background-color: red;
-}
-
 .region-content div {
-    width: 32%;
+    width: 30%;
     float: left;
 }
 
@@ -73,4 +61,84 @@ header {
 
 .layout-sidebar-first {
     clear: both;
+}
+
+.views-row {
+    width: 100% !important;
+}
+
+#block-bmwparadise-views-block-gulbene-block-1  div {
+    width: 98%;
+    margin-left: 1%;
+}
+
+#block-bmwparadise-views-block-riga-block-1 div{
+    width: 98%;
+    margin-left: 1%;
+}
+
+#block-bmwparadise-views-block-valmiera-block-1 div{
+    width: 98%;
+    margin-left: 1%;
+}
+
+#block-bmwparadise-views-block-gulbene-block-1  h2 {
+    text-align: center;
+}
+
+#block-bmwparadise-views-block-riga-block-1 h2{
+    text-align: center;
+}
+
+#block-bmwparadise-views-block-valmiera-block-1 h2{
+    text-align: center;
+}
+
+.field--name-field-parts-image {
+    width: 128px !important;
+    height: 128px;
+}
+
+.field--name-field-parts-text {
+    width: 50% !important;
+}
+
+.field--name-field-parts-price {
+    width: 21% !important;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+    .field--name-field-parts-image {
+        display: none;
+    }
+
+    .field--name-field-parts-price {
+        width: 10% !important;
+        font-weight: bold;
+        font-size: 14px;
+        clear: both;
+    }
+
+    .region-content h2{
+        font-size: 16px;
+    }
+
+
+    #block-bmwparadise-views-block-gulbene-block-1 {
+
+    }
+
+    #block-bmwparadise-views-block-riga-block-1 {
+        margin-left: 10px;
+    }
+
+    #block-bmwparadise-views-block-valmiera-block-1 {
+        margin-left: 20px;
+    }
+
 }
