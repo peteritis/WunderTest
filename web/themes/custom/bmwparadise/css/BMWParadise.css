@@ -101,15 +101,17 @@ header {
 
 .field--name-field-parts-text {
     width: 50% !important;
+    text-align: center;
 }
 
 .field--name-field-parts-price {
-    width: 21% !important;
     font-weight: bold;
     font-size: 21px;
+    clear: both;
+    text-align: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     body {
         background-color: lightblue;
     }
@@ -117,11 +119,17 @@ header {
         display: none;
     }
 
+    .field--name-field-parts-text {
+        width: 100% !important;
+        text-align: center;
+    }
+
     .field--name-field-parts-price {
-        width: 10% !important;
+        width: 100% !important;
         font-weight: bold;
         font-size: 14px;
         clear: both;
+        text-align: center;
     }
 
     .region-content h2{
